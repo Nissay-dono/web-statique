@@ -1,0 +1,59 @@
+h1 {
+    border-bottom:1px solid;
+    margin-bottom: 0;
+}
+
+main {
+    color: rgb(124, 130, 138);
+    border-left: 1px solid;
+    margin-left: 7em;
+    padding-left: 5em;
+}
+
+nav {
+    color:blue;
+    float:left;
+    width: 7em;
+    margin-top: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    width: 7em;
+}
+
+nav li {
+    position: relative;
+    list-style-type: none;
+    padding: 2px;
+    margin: 0;
+}
+
+nav li:hover {
+    background-color: lightcoral;
+}
+
+nav li.SousMenu:hover { 
+    background-color: rgb(225, 175, 175);
+}   
+
+nav li a {
+    display: block;
+    padding: 0;
+    text-decoration: none;
+    width:7em;
+}
+
+nav ul ul {
+    position: absolute;
+    top: 0%;
+    left: 7em;
+    display: none;
+}
+
+nav li.SousMenu:hover ul {
+    display: block;
+}
